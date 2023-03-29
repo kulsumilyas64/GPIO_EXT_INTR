@@ -9,7 +9,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)                      // External 
 		HAL_GPIO_TogglePin (LD2_GPIO_Port, LD2_Pin);      // Toggling Function
 	}
 	else{
-		__NOP ();
+		__NOP ();            //Wait for Interrupt
 	}
 }
 
